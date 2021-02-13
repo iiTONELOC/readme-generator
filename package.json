@@ -1,0 +1,26 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "README Generator for projects",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iiTONELOC/readme-generator.git"
+  },
+  "keywords": [
+    "README",
+    "Generator"
+  ],
+  "author": "Anthony Tropeano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iiTONELOC/readme-generator/issues"
+  },
+  "homepage": "https://github.com/iiTONELOC/readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
