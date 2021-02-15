@@ -72,40 +72,40 @@ const generateLicenseShield = license => {
 module.exports = templateData => {
     const data = templateData;
 
-    return `
-    # Title
-    ${data.title}
-    ${generateLicenseShield(data.license)}
+return `
+# Title
+${data.title}
+${generateLicenseShield(data.license)}
 
-    # Description
-    ${data.description }
+# Description
+${data.description }
     
-    # Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Contribute](#contribute)
-    * [Tests](#tests)
-    * [Questions](#questions)
-    * [License](#license)
+# Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contribute](#contribute)
+* [Tests](#tests)
+* [Questions](#questions)
+* [License](#license)
 
-    # Installation
-    ${data.installation}
+# Installation
+${data.installation}
 
-    # Usage
-    ${data.usage}
+# Usage
+${data.usage}
 
-    # Contribute 
-    ${data.contribute}
+# Contribute 
+${data.contribute}
 
-    # Tests
-    ${data.test}
+# Tests
+${data.test}
 
-    # Questions
-    Feel free to reach out if you have any questions
-    GitHub Information: [${data.github}](https://github.com/${data.github})
-    Email Information: [${data.email}](mailto:${data.email})
+# Questions
+Feel free to reach out if you have any questions
+GitHub Information: [${data.github}](https://github.com/${data.github})
+Email Information: [${data.email}](mailto:${data.email})
     
-    # License
-    ${data.license}
-    `;
+# License
+${data.license}
+`;
 };
