@@ -3,9 +3,20 @@ const generateReadME = require('./src/page-template');
 const writeFile = require('./utils/generate-readme');
 
 console.log(`
-=================
-ReadME Generator
-=================
+=========================================================
+                    README Generator
+=========================================================
+
+
+*********************************************************
+ - Welcome to README Generator!
+ - Follow the prompts and enter the required information.
+ - If there are no instructions for a required section,
+   press the space-bar followed by enter to continue!
+
+*********************************************************
+
+
 `);
 const promptUser = () => {
 
@@ -104,7 +115,7 @@ const promptUser = () => {
                 if (installationInput) {
                     return true;
                 } else {
-                    console.log('You need to enter installation instructions, If there are no instructions press space followed by enter to continue!');
+                    console.log('You need to enter installation instructions!');
                     return false;
                 }
             }
@@ -117,7 +128,7 @@ const promptUser = () => {
                 if (usageInput) {
                     return true;
                 } else {
-                    console.log('You need to enter usage instructions!');
+                    console.log('You need to enter instructions for how to use your app!');
                     return false;
                 }
             }
@@ -130,7 +141,7 @@ const promptUser = () => {
                 if (contributeInput) {
                     return true;
                 } else {
-                    console.log('You need to enter contribution instructions, If there are no instructions press space followed by enter to continue!');
+                    console.log('You need to enter contribution instructions!');
                     return false;
                 }
             }
@@ -143,7 +154,7 @@ const promptUser = () => {
                 if (testInput) {
                     return true;
                 } else {
-                    console.log('You need to enter test instructions, If there are no instructions press space followed by enter to continue!');
+                    console.log('You need to enter instructions for how to test your app!');
                     return false;
                 }
             }
