@@ -1,11 +1,12 @@
 
 # Title
 test
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 # Description
 test
-    
+
 # Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -28,8 +29,8 @@ test
 
 # Questions
 Feel free to reach out if you have any questions
-GitHub Information: [test](https://github.com/test)
+GitHub Information: [test](https://github.com/test)  
 Email Information: [test](mailto:test)
-    
+
 # License
 MIT License

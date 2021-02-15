@@ -2,7 +2,7 @@
 //toc link (https://github.com/userName/repoName#section name)
 // creates the badge for the license 
 const generateLicenseShield = license => {
-    let badge = '';
+    let badge = ''
     switch (license) {
         case 'None':
             badge = '![License](https://img.shields.io/badge/license-None-informational)'
@@ -71,15 +71,16 @@ const generateLicenseShield = license => {
 // export function to generate entire page
 module.exports = templateData => {
     const data = templateData;
-
+    const liBadge = generateLicenseShield(data.license[0]);
 return `
 # Title
 ${data.title}
-${generateLicenseShield(data.license)}
+${liBadge}
+
 
 # Description
 ${data.description }
-    
+
 # Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -102,9 +103,9 @@ ${data.test}
 
 # Questions
 Feel free to reach out if you have any questions
-GitHub Information: [${data.github}](https://github.com/${data.github})
+GitHub Information: [${data.github}](https://github.com/${data.github})  
 Email Information: [${data.email}](mailto:${data.email})
-    
+
 # License
 ${data.license}
 `;
