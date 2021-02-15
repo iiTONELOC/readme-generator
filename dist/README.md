@@ -1,36 +1,36 @@
 
-# Title
-test
+# README Generator  
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 # Description
-test
+Generates a readme file from user input
 
 # Table of Contents
-* [Installation](#installation)
-* [Usage](#usage)
-* [Contribute](#contribute)
-* [Tests](#tests)
-* [Questions](#questions)
-* [License](#license)
+1. [Installation](#installation)  
+2. [Usage](#usage)  
+3. [Contribute](#contribute)  
+4.[Tests](#tests)  
+5. [Questions](#questions)  
+6. [License](#license)
 
 # Installation
-test
+clone repo, npm init , run node app
 
 # Usage
-test
+use to generate readme files for your project
 
 # Contribute 
-test
+none
 
 # Tests
-test
+none
 
 # Questions
 Feel free to reach out if you have any questions
-GitHub Information: [test](https://github.com/test)  
-Email Information: [test](mailto:test)
+
+Contact via GitHub: [iiTONELOC](https://github.com/iiTONELOC)  
+Send an email: [test](mailto:test)
 
 # License
 MIT License

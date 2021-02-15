@@ -2,13 +2,13 @@ const inquirer = require('inquirer');
 const generateReadME = require('./src/page-template');
 const writeFile = require('./utils/generate-readme');
 
-
-const promptUser = () => {
-    console.log(`
+console.log(`
 =================
 ReadME Generator
 =================
 `);
+const promptUser = () => {
+
     return inquirer.prompt([
         {
             type: 'input',

@@ -73,8 +73,7 @@ module.exports = templateData => {
     const data = templateData;
     const liBadge = generateLicenseShield(data.license[0]);
 return `
-# Title
-${data.title}
+# ${data.title}  
 ${liBadge}
 
 
@@ -82,12 +81,12 @@ ${liBadge}
 ${data.description }
 
 # Table of Contents
-* [Installation](#installation)
-* [Usage](#usage)
-* [Contribute](#contribute)
-* [Tests](#tests)
-* [Questions](#questions)
-* [License](#license)
+1. [Installation](#installation)  
+2. [Usage](#usage)  
+3. [Contribute](#contribute)  
+4. [Tests](#tests)  
+5. [Questions](#questions)  
+6. [License](#license)
 
 # Installation
 ${data.installation}
@@ -103,8 +102,9 @@ ${data.test}
 
 # Questions
 Feel free to reach out if you have any questions
-GitHub Information: [${data.github}](https://github.com/${data.github})  
-Email Information: [${data.email}](mailto:${data.email})
+
+Contact via GitHub: [${data.github}](https://github.com/${data.github})  
+Send an email: [${data.email}](mailto:${data.email})
 
 # License
 ${data.license}
