@@ -25,6 +25,19 @@ const promptUser = () => {
         },
         {
             type: 'input',
+            name: 'year',
+            message: 'Enter the current year, this is for the license section(Required)',
+            validate: yearInput => {
+                if (yearInput) {
+                    return true;
+                } else {
+                    console.log('Please enter the current year!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
             name: 'github',
             message: 'Enter your GitHub Username (Required)',
             validate: githubInput => {
