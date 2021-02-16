@@ -110,6 +110,6 @@ Contact via GitHub: [${data.github}](https://github.com/${data.github})
 Send an email: [${data.email}](mailto:${data.email})
 
 # License
-${renderLicenseText(data.license)}
+${renderLicenseText(data)}
 `;
 };

@@ -29,8 +29,8 @@ t
 # Questions
 Feel free to reach out if you have any questions
 
-Contact via GitHub: [t](https://github.com/t)  
-Send an email: [t](mailto:t)
+Contact via GitHub: [iiTONELOC](https://github.com/iiTONELOC)  
+Send an email: [ ](mailto: )
 
 # License
   Apache License
@@ -221,7 +221,7 @@ file or class name and description of purpose be included on the
 same "printed page" as the copyright notice for easier
 identification within third-party archives.
 
-Copyright [yyyy] [name of copyright owner]
+Copyright [yyyy] Anthony Tropeano
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

@@ -12,6 +12,19 @@ const promptUser = () => {
     return inquirer.prompt([
         {
             type: 'input',
+            name: 'name',
+            message: 'Enter your full name (Required)',
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your full name!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
             name: 'github',
             message: 'Enter your GitHub Username (Required)',
             validate: githubInput => {
