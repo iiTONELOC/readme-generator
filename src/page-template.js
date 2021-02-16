@@ -2,6 +2,7 @@
 //toc link (https://github.com/userName/repoName#section name)
 // creates the badge for the license 
 const renderLicenseText = require('./render-license')
+const renderStack = require('./render-stack')
 const generateLicenseShield = license => {
     let badge = ''
     switch (license) {
@@ -73,9 +74,9 @@ const generateLicenseShield = license => {
 // generate README
 // export function to generate entire page
 module.exports = templateData => {
-    const data = templateData;
+    const { tech, ...data } = templateData;
     const liBadge = generateLicenseShield(data.license[0]);
-return `
+    return `
 # ${data.title}  
 ${liBadge}
 
@@ -93,8 +94,12 @@ ${data.description}
 
 # Installation  
 Project Repository: [${data.link}](https://github.com/${data.github}/${data.link})  
-${data.installation}
+${data.installation}  
 
+# Tech Stack
+| Technology | Description                        |Links ↘️ |
+| ---------- | -----------------------------------| ------|
+${renderStack(tech)}
 # Usage
 ${data.usage}
 

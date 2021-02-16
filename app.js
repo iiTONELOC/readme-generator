@@ -187,7 +187,113 @@ const promptUser = () => {
         },
     ]);
 };
+
+// adds the tech stack
+const promptTech = readData => {
+    console.log(`
+  ========================
+    Build the tech Stack 
+  ========================
+  `);
+
+    // If there's no 'tech' array property, create one
+    if (!readData.tech) {
+        readData.tech = [];
+    }
+    return inquirer
+        .prompt([
+            {
+                type: 'input',
+                name: 'technology',
+                message: 'What is the name of the technology used? (Required)',
+                validate: techInput => {
+                    if (techInput) {
+                        return true;
+                    } else {
+                        console.log('You need to enter a technology!');
+                        return false;
+                    }
+                }
+            },
+            {
+                type: 'input',
+                name: 'description',
+                message: 'Provide a description of the the language, i.e HTML would be Hyper Text Markup Language (Required)',
+                validate: descriptionInput => {
+                    if (descriptionInput) {
+                        return true;
+                    } else {
+                        console.log('You need to enter a description!');
+                        return false;
+                    }
+                }
+            },
+            {
+                type: 'input',
+                name: 'badgeMessage',
+                message: 'What is the code coverage for this language? Please include %',
+                validate: badgeInput => {
+                    if (badgeInput) {
+                        return true;
+                    } else {
+                        console.log('You need to enter a % amount');
+                        return false;
+                    }
+                }
+            },
+            {
+                type: 'checkbox',
+                name: 'color',
+                message: 'Select a color for your badge',
+                choices: [
+                    'brightgreen',
+                    'green',
+                    'yellowgreen',
+                    'yellow',
+                    "orange",
+                    "red",
+                    'blue',
+                    'lightgrey',
+                    'blueviolet',
+                    'rebeccapurple',
+                ],
+            },
+            {
+                type: 'confirm',
+                name: 'confirmAddLink',
+                message: 'Would you like to add any links used that helped you use that technology?',
+                default: true
+            },
+            {
+                type: 'input',
+                name: 'link',
+                message: 'Please provide the full link including https:// ',
+                when: ({ confirmAddLink}) => confirmAddLink
+            },
+            {
+                type: 'input',
+                name: 'linkDescription',
+                message: 'Please provide the description for the link',
+                when: ({ confirmAddLink}) => confirmAddLink
+            },
+            {
+                type: 'confirm',
+                name: 'confirmAddTech',
+                message: 'Would you like to enter another technology to the stack?',
+                default: false
+            }
+        ])
+        .then(techData => {
+            readData.tech.push(techData);
+            if (techData.confirmAddTech) {
+                return promptTech(readData);
+            } else {
+                return readData;
+            }
+        });
+};
 promptUser()
+    .then(promptTech)
     .then(readData => {
         return generateReadME(readData);
     })

@@ -1,10 +1,10 @@
 
-# README Generator  
+# t  
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 # Description
-node.js application that generates a README from user input.
+t
 
 # Table of Contents
 1. [Installation](#installation)  
@@ -15,28 +15,39 @@ node.js application that generates a README from user input.
 6. [License](#license)
 
 # Installation  
-Project Repository: [readme-generator](https://github.com/iiTONELOC/readme-generator)  
-test
+Project Repository: [t](https://github.com/t/t)  
+t  
 
+# Tech Stack
+| Technology | Description                        |Links ↘️ |
+| ---------- | -----------------------------------| ------|
+
+    
+| ![JAVA](https://shields.io/static/v1?label=JAVA&message=100%&color=orange&style=flat-square) | JAVA| [inquirer](https://www.npmjs.com/package/inquirer)|
+          
+            
+| ![node](https://shields.io/static/v1?label=node&message=0%&color=yellowgreen&style=flat-square) | node| [inquirer](https://www.npmjs.com/package/inquirer)|
+        
+            
 # Usage
-test
+t
 
 # Contribute 
-none
+t
 
 # Tests
-none
+t
 
 # Questions
 Feel free to reach out if you have any questions
 
-Contact via GitHub: [iiTONELOC](https://github.com/iiTONELOC)  
-Send an email: [anthonytropeano@me.com](mailto:anthonytropeano@me.com)
+Contact via GitHub: [t](https://github.com/t)  
+Send an email: [t](mailto:t)
 
 # License
 MIT License
 
-        Copyright (c) 2021 Anthony Tropeano
+        Copyright (c) t t
         
         Permission is hereby granted, free of charge, to any person obtaining a copy
         of this software and associated documentation files (the "Software"), to deal
