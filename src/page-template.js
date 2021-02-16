@@ -81,7 +81,7 @@ ${liBadge}
 
 
 # Description
-${data.description }
+${data.description}
 
 # Table of Contents
 1. [Installation](#installation)  
@@ -91,7 +91,8 @@ ${data.description }
 5. [Questions](#questions)  
 6. [License](#license)
 
-# Installation
+# Installation  
+Project Repository: [${data.link}](https://github.com/${data.github}/${data.link})  
 ${data.installation}
 
 # Usage
