@@ -73,8 +73,8 @@ const generateLicenseShield = license => {
 // generate README
 // export function to generate entire page
 module.exports = templateData => {
-    const {license, ...data} = templateData;
-    const liBadge = generateLicenseShield(license[0]);
+    const data = templateData;
+    const liBadge = generateLicenseShield(data.license[0]);
 return `
 # ${data.title}  
 ${liBadge}
@@ -110,6 +110,6 @@ Contact via GitHub: [${data.github}](https://github.com/${data.github})
 Send an email: [${data.email}](mailto:${data.email})
 
 # License
-${renderLicenseText(license)}
+${renderLicenseText(data.license)}
 `;
 };
