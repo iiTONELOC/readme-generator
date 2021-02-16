@@ -98,7 +98,7 @@ ${data.installation}
 
 # Tech Stack
 | Technology | Description                        |Links ↘️ |
-| ---------- | -----------------------------------| ------|
+| ---------- | -----------------------------------| ------|  
 ${renderStack(tech)}
 # Usage
 ${data.usage}
