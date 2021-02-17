@@ -15,8 +15,8 @@ ${generateLicenseShield(data.license)}
 ${data.description}
 
 # Table of Contents
-*[Demo](#demo)
-*[Technology Stack](#technology-stack)
+*[Demo](#demo)  
+*[Technology](#technology)  
 *[Features](#features)  
 *[Installation](#installation)
 *[Usage](#usage)  
@@ -28,7 +28,7 @@ ${data.description}
 # Demo
 [![${data.title}](${data.screenshot})](${data.demoURL})
 
-# Tech Stack
+# Technology 
 | Technology | Description                        |Links ↘️ |
 | ---------- | -----------------------------------| ------|  
 ${renderStack(tech)}

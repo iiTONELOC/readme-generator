@@ -9,8 +9,8 @@
 TEST
 
 # Table of Contents
-*[Demo](#demo)
-*[Technology Stack](#technology-stack)
+*[Demo](#demo)  
+*[Technology Stack](#technology_stack)  
 *[Features](#features)  
 *[Installation](#installation)
 *[Usage](#usage)  
