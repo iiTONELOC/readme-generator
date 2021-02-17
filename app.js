@@ -63,15 +63,20 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'link',
-            message: 'Enter the GitHub link to your project. (Required)',
+            message: 'Enter the name for your GitHub Repo. (Required)',
             validate: linkInput => {
                 if (linkInput) {
                     return true;
                 } else {
-                    console.log('You need to enter a project GitHub link!');
+                    console.log('You need to enter a repo!');
                     return false;
                 }
             }
+        },
+        {
+            type: 'input',
+            name: 'url',
+            message: 'Enter the full url for your deployed application.',
         },
         {
             type: 'input',
@@ -79,7 +84,7 @@ const promptUser = () => {
             message: 'Enter your email address if you would like to include it in your readme.',
         },
         {
-            type: 'checkbox',
+            type: 'list',
             name: 'license',
             message: 'Select a license from the list below:',
             choices: [
@@ -98,11 +103,42 @@ const promptUser = () => {
                 'Mozilla Public License 2.0',
                 'The Unlicense',
             ],
-            validate: licenseInput => {
-                if (licenseInput) {
+        },
+        {
+            type: 'input',
+            name: 'screenshot',
+            message: 'What is the relative path for the screenshot? (Required)',
+            validate: screenInput => {
+                if (screenInput) {
                     return true;
                 } else {
-                    console.log('You need to enter license option.');
+                    console.log('You need to enter a screenshot path!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'demoURL',
+            message: 'What is the relative path for the video for the DEMO? (Required)',
+            validate: demoInput => {
+                if (demoInput) {
+                    return true;
+                } else {
+                    console.log('You need to enter a relative path!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'features',
+            message: 'What features would you like to talk about? (Required)',
+            validate: demoInput => {
+                if (demoInput) {
+                    return true;
+                } else {
+                    console.log('You need to enter features!');
                     return false;
                 }
             }
@@ -242,7 +278,7 @@ const promptTech = readData => {
                 }
             },
             {
-                type: 'checkbox',
+                type: 'list',
                 name: 'color',
                 message: 'Select a color for your badge',
                 choices: [
@@ -259,22 +295,16 @@ const promptTech = readData => {
                 ],
             },
             {
-                type: 'confirm',
-                name: 'confirmAddLink',
-                message: 'Would you like to add any links used that helped you use that technology?',
-                default: true
-            },
-            {
                 type: 'input',
                 name: 'link',
                 message: 'Please provide the full link including https:// ',
-                when: ({ confirmAddLink}) => confirmAddLink
+                
             },
             {
                 type: 'input',
                 name: 'linkDescription',
                 message: 'Please provide the description for the link',
-                when: ({ confirmAddLink}) => confirmAddLink
+                
             },
             {
                 type: 'confirm',

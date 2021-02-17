@@ -1,6 +1,6 @@
 const renderLicenseText = licenseData => {
     let license = licenseData.license
-    if (license[0] === 'Apache License 2.0') {
+    if (license === 'Apache License 2.0') {
         return `  Apache License
         Version 2.0, January 2004
      http://www.apache.org/licenses/
@@ -204,7 +204,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
         `
     }
-    if (license[0] === 'GNU General Public License v3.0') {
+    if (license === 'GNU General Public License v3.0') {
         return `GNU GENERAL PUBLIC LICENSE
         Version 3, 29 June 2007
 
@@ -881,7 +881,7 @@ Public License instead of this License.  But first, please read
 <https://www.gnu.org/licenses/why-not-lgpl.html>.
         `
     }
-    if (license[0] === 'MIT License'){
+    if (license === 'MIT License') {
         return `MIT License
 
         Copyright (c) ${licenseData.year} ${licenseData.name}
@@ -905,7 +905,7 @@ Public License instead of this License.  But first, please read
         SOFTWARE.
         `
     }
-    if (license[0] === "BSD 2-Clause 'Simplified' License"){
+    if (license === "BSD 2-Clause 'Simplified' License") {
         return `BSD 2-Clause License
 
         Copyright (c) ${licenseData.year}, ${licenseData.name}
@@ -933,7 +933,7 @@ Public License instead of this License.  But first, please read
         OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         `
     }
-    if (license[0] === "BSD 3-Clause 'New' or 'Revised' License"){
+    if (license === "BSD 3-Clause 'New' or 'Revised' License") {
         return `BSD 3-Clause License
 
         Copyright (c) ${licenseData.year}, ${licenseData.name}
@@ -965,7 +965,7 @@ Public License instead of this License.  But first, please read
         OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         `
     }
-    if (license[0] === 'Boost Software License 1.0'){
+    if (license === 'Boost Software License 1.0') {
         return `Boost Software License - Version 1.0 - August 17th, 2003
 
         Permission is hereby granted, free of charge, to any person or organization
@@ -991,7 +991,7 @@ Public License instead of this License.  But first, please read
         DEALINGS IN THE SOFTWARE.
         `
     }
-    if (license[0] === 'Creative Commons Zero v1.0 Universal'){
+    if (license === 'Creative Commons Zero v1.0 Universal') {
         return `Creative Commons Legal Code
 
         CC0 1.0 Universal
@@ -1115,7 +1115,7 @@ Public License instead of this License.  But first, please read
             this CC0 or use of the Work.
         `
     }
-    if (license[0] === 'Eclipse Public License 2.0'){
+    if (license === 'Eclipse Public License 2.0') {
         return `Eclipse Public License - v 2.0
 
         THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE
@@ -1395,7 +1395,7 @@ Public License instead of this License.  But first, please read
       You may add additional accurate notices of copyright ownership.
         `
     }
-    if (license[0] === 'GNU Affero General Public License v3.0'){
+    if (license === 'GNU Affero General Public License v3.0') {
         return `              GNU AFFERO GENERAL PUBLIC LICENSE
         Version 3, 19 November 2007
 
@@ -2059,7 +2059,7 @@ For more information on this, and how to apply and follow the GNU AGPL, see
 <https://www.gnu.org/licenses/>.
         `
     }
-    if (license[0] === 'GNU General Public License v2.0'){
+    if (license === 'GNU General Public License v2.0') {
         return `       GNU GENERAL PUBLIC LICENSE
         Version 2, June 1991
 
@@ -2401,7 +2401,7 @@ library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.
         `
     }
-    if (license[0] === 'GNU Lesser General Public License v2.1'){
+    if (license === 'GNU Lesser General Public License v2.1') {
         return `          GNU LESSER GENERAL PUBLIC LICENSE
         Version 2.1, February 1999
 
@@ -2908,7 +2908,7 @@ Ty Coon, President of Vice
 That's all there is to it!
         `
     }
-    if (license[0] === 'Mozilla Public License 2.0'){
+    if (license === 'Mozilla Public License 2.0') {
         return `Mozilla Public License Version 2.0
         ==================================
         
@@ -3284,7 +3284,7 @@ That's all there is to it!
           defined by the Mozilla Public License, v. 2.0.
         `
     }
-    if (license[0] === 'The Unlicense'){
+    if (license === 'The Unlicense') {
         return `This is free and unencumbered software released into the public domain.
 
         Anyone is free to copy, modify, publish, use, compile, sell, or
@@ -3311,7 +3311,7 @@ That's all there is to it!
         For more information, please refer to <https://unlicense.org>
         `
     }
-    if (license[0] === 'None'){
+    if (license === 'None') {
         return `None`
     }
 }
