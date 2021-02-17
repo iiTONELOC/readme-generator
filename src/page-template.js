@@ -6,7 +6,7 @@ module.exports = templateData => {
     const { tech, ...data } = templateData;    
     return `
 # ${data.title}  
-${generateLicenseShield(data.license)}
+${generateLicenseShield(data.license)} ![GitHub language count](https://img.shields.io/github/languages/count/${data.github}/${data.link}?style=flat-square) ![GitHub top language](https://img.shields.io/github/languages/top/${data.github}/${data.link}?style=flat-square)
 
 # Screenshot
 ![${data.title}](${data.screenshot})
@@ -41,7 +41,7 @@ Project Repository: [${data.link}](https://github.com/${data.github}/${data.link
 ${data.installation} 
 
 # Usage
-${data.url}
+[${data.title}](${data.url})
 ${data.usage}
 
 # Contribute 

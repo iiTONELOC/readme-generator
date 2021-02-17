@@ -36,19 +36,6 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'year',
-            message: 'Enter the current year, this is for the license section(Required)',
-            validate: yearInput => {
-                if (yearInput) {
-                    return true;
-                } else {
-                    console.log('Please enter the current year!');
-                    return false;
-                }
-            }
-        },
-        {
-            type: 'input',
             name: 'github',
             message: 'Enter your GitHub Username (Required)',
             validate: githubInput => {
@@ -72,11 +59,6 @@ const promptUser = () => {
                     return false;
                 }
             }
-        },
-        {
-            type: 'input',
-            name: 'url',
-            message: 'Enter the full url for your deployed application.',
         },
         {
             type: 'input',
@@ -106,39 +88,13 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'screenshot',
-            message: 'What is the relative path for the screenshot? (Required)',
-            validate: screenInput => {
-                if (screenInput) {
+            name: 'year',
+            message: 'Enter the current year, this is for the license section(Required)',
+            validate: yearInput => {
+                if (yearInput) {
                     return true;
                 } else {
-                    console.log('You need to enter a screenshot path!');
-                    return false;
-                }
-            }
-        },
-        {
-            type: 'input',
-            name: 'demoURL',
-            message: 'What is the relative path for the video for the DEMO? (Required)',
-            validate: demoInput => {
-                if (demoInput) {
-                    return true;
-                } else {
-                    console.log('You need to enter a relative path!');
-                    return false;
-                }
-            }
-        },
-        {
-            type: 'input',
-            name: 'features',
-            message: 'What features would you like to talk about? (Required)',
-            validate: demoInput => {
-                if (demoInput) {
-                    return true;
-                } else {
-                    console.log('You need to enter features!');
+                    console.log('Please enter the current year!');
                     return false;
                 }
             }
@@ -165,6 +121,19 @@ const promptUser = () => {
                     return true;
                 } else {
                     console.log('You need to enter a project description!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'features',
+            message: 'What features would you like to talk about? (Required)',
+            validate: demoInput => {
+                if (demoInput) {
+                    return true;
+                } else {
+                    console.log('You need to enter features!');
                     return false;
                 }
             }
@@ -221,15 +190,46 @@ const promptUser = () => {
                 }
             }
         },
+        {
+            type: 'input',
+            name: 'url',
+            message: 'Enter the full url for your deployed application.',
+        },
+        {
+            type: 'input',
+            name: 'screenshot',
+            message: 'What is the relative path for the screenshot? (Required)',
+            validate: screenInput => {
+                if (screenInput) {
+                    return true;
+                } else {
+                    console.log('You need to enter a screenshot path!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'demoURL',
+            message: 'What is the relative path for the video for the DEMO? (Required)',
+            validate: demoInput => {
+                if (demoInput) {
+                    return true;
+                } else {
+                    console.log('You need to enter a relative path!');
+                    return false;
+                }
+            }
+        },
     ]);
 };
 
 // adds the tech stack
 const promptTech = readData => {
     console.log(`
-  ========================
-    Build the tech Stack 
-  ========================
+                ========================
+                  Build the Tech Stack 
+                ========================
   `);
 
     // If there's no 'tech' array property, create one
@@ -254,7 +254,7 @@ const promptTech = readData => {
             {
                 type: 'input',
                 name: 'description',
-                message: 'Provide a description of the the language, i.e HTML would be Hyper Text Markup Language (Required)',
+                message: 'Provide a description of the the language/technology, i.e HTML would be Hyper Text Markup Language (Required)',
                 validate: descriptionInput => {
                     if (descriptionInput) {
                         return true;
@@ -298,13 +298,11 @@ const promptTech = readData => {
                 type: 'input',
                 name: 'link',
                 message: 'Please provide the full link including https:// ',
-                
             },
             {
                 type: 'input',
                 name: 'linkDescription',
                 message: 'Please provide the description for the link',
-                
             },
             {
                 type: 'confirm',
@@ -332,6 +330,19 @@ promptUser()
     })
     .then(writeFileResponse => {
         console.log(writeFileResponse);
+        console.log(`
+
+*********************************************************
+       Check your dist folder for your new README!
+
+*********************************************************
+
+
+=========================================================
+         Thank you for using README Generator!
+=========================================================
+
+`)
     })
     .catch(err => {
         console.log(err);
