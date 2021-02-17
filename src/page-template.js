@@ -50,7 +50,7 @@ ${data.contribute}
 # Tests
 ${data.test}
 
-# Questions/Contact Information
+# Questions
 Feel free to reach out if you have any questions
 
 Contact via GitHub: [${data.github}](https://github.com/${data.github})  
