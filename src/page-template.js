@@ -18,7 +18,7 @@ ${data.description}
 *[Demo](#demo)  
 *[Technology](#technology)  
 *[Features](#features)  
-*[Installation](#installation)
+*[Installation](#installation)  
 *[Usage](#usage)  
 *[Contribute](#contribute)  
 *[Tests](#tests)  
