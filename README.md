@@ -32,7 +32,8 @@ README Generator features the Inquire package.
 
 # Installation  
 Project Repository: [readme-generator](https://github.com/iiTONELOC/readme-generator)  
-Clone the repo, link is above.  Navigate to the root of the project in your terminal and type the following command: ```npm install```  
+Clone the repo, link is above.  
+Navigate to the root of the project in your terminal and type the following command: ```npm install```  
 Once the modules have finished loading type the following command to launch the program: ```node index``` 
 
 # Usage
