@@ -41,7 +41,7 @@ Project Repository: [${data.link}](https://github.com/${data.github}/${data.link
 ${data.installation} 
 
 ## Usage
-[${data.title}](${data.url})
+[${data.title}](${data.url})  
 ${data.usage}
 
 ## Contribute 
