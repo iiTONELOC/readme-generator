@@ -8,13 +8,13 @@ module.exports = templateData => {
 # ${data.title}  
 ${generateLicenseShield(data.license)} ![GitHub language count](https://img.shields.io/github/languages/count/${data.github}/${data.link}?style=flat-square) ![GitHub top language](https://img.shields.io/github/languages/top/${data.github}/${data.link}?style=flat-square)
 
-## Screenshot
+# Screenshot
 ![${data.title}](${data.screenshot})
 
-## Description
+# Description
 ${data.description}
 
-## Table of Contents
+# Table of Contents
 *[Demo](#demo)  
 *[Technology](#technology)  
 *[Features](#features)  
@@ -25,38 +25,38 @@ ${data.description}
 *[Questions](#questions)  
 *[License](#license)
 
-## Demo
-[![${data.title}](${data.screenshot})](${data.demoURL})
+# Demo
+[DEMO: ${data.title}](${data.demoURL})
 
-## Technology 
+# Technology 
 | Technology | Description                        |Links ↘️ |
 | ---------- | -----------------------------------| ------|  
 ${renderStack(tech)}
 
-## Features
+# Features
 ${data.features}
 
-## Installation  
-Project Repository: [${data.link}](https://github.com/${data.github}/${data.link})  
+# Installation  
+Project Repository: [${data.title}](https://github.com/${data.github}/${data.link})  
 ${data.installation} 
 
-## Usage
+# Usage
 [${data.title}](${data.url})  
 ${data.usage}
 
-## Contribute 
+# Contribute 
 ${data.contribute}
 
-## Tests
+# Tests
 ${data.test}
 
-## Questions
+# Questions
 Feel free to reach out if you have any questions
 
 Contact via GitHub: [${data.github}](https://github.com/${data.github})  
 Send an email: [${data.email}](mailto:${data.email})
 
-## License
+# License
 ${renderLicenseText(data)}
 `;
 };
