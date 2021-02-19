@@ -297,7 +297,7 @@ const promptTech = readData => {
             {
                 type: 'input',
                 name: 'link',
-                message: 'Please provide the full link including https:// ',
+                message: 'If you would like to include a relevant link type the complete URL including https:// ',
             },
             {
                 type: 'input',
