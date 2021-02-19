@@ -211,7 +211,7 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'demoURL',
-            message: 'What is the relative path for the video for the DEMO? (Required)',
+            message: 'Enter the URL for the video for the DEMO? (Required)',
             validate: demoInput => {
                 if (demoInput) {
                     return true;

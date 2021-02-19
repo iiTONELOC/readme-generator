@@ -1,12 +1,12 @@
 
-#    
-![License](https://img.shields.io/badge/license-None-informational) ![GitHub language count](https://img.shields.io/github/languages/count/ / ?style=flat-square) ![GitHub top language](https://img.shields.io/github/languages/top/ / ?style=flat-square)
+# Bored In The House  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![GitHub language count](https://img.shields.io/github/languages/count/iiTONELOC/covid-master?style=flat-square) ![GitHub top language](https://img.shields.io/github/languages/top/iiTONELOC/covid-master?style=flat-square)
 
 # Screenshot
-![ ]( )
+![Bored In The House]( )
 
 # Description
- 
+TEST
 
 # Table of Contents
 *[Demo](#demo)  
@@ -20,35 +20,58 @@
 *[License](#license)
 
 # Demo
-[![ ]( )]( )
+[![Bored In The House]( )]( )
 
 # Technology 
 | Technology | Description                        |Links ↘️ |
 | ---------- | -----------------------------------| ------|  
-| ![  ](https://shields.io/static/v1?label=  &message= &color=brightgreen&style=flat-square) |   | [ ]( ) |
+| ![JavaScript](https://shields.io/static/v1?label=JavaScript&message=50%&color=orange&style=flat-square) | JavaScript | [test](test) |
+| ![CSS](https://shields.io/static/v1?label=CSS&message=50&color=rebeccapurple&style=flat-square) | Cascading Style Sheets | [TEST](TEST) |
+| ![TEST](https://shields.io/static/v1?label=TEST&message=TEST&color=yellow&style=flat-square) | TEST | [TEST](TEST) |
 
 # Features
- 
+TEST
 
 # Installation  
-Project Repository: [ ](https://github.com/ / )  
-  
+Project Repository: [covid-master](https://github.com/iiTONELOC/covid-master)  
+TEST 
 
 # Usage
-[ ]( )
- 
+[Bored In The House](https://github.io/iitoneloc/covid-master)
+TEST
 
 # Contribute 
- 
+TEST
 
 # Tests
- 
+TEST
 
 # Questions
 Feel free to reach out if you have any questions
 
-Contact via GitHub: [ ](https://github.com/ )  
-Send an email: [ ](mailto: )
+Contact via GitHub: [iiTONELOC](https://github.com/iiTONELOC)  
+Send an email: [anthonytropeano@me.com](mailto:anthonytropeano@me.com)
 
 # License
-None
+MIT License
+
+        Copyright (c) 2021 Anthony Tropeano
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
