@@ -9,15 +9,15 @@
 README Generator is a professional README generator that can be used for all your projects. It includes all the relevant sections and offers badges for the license, the language count and the top language. The Technology stack features the language and code coverage in the form of badges, a place for a description of the language used, and a place for relevant links. 
 
 # Table of Contents
-*[Demo](#demo)  
-*[Technology](#technology)  
-*[Features](#features)  
-*[Installation](#installation)  
-*[Usage](#usage)  
-*[Contribute](#contribute)  
-*[Tests](#tests)  
-*[Questions](#questions)  
-*[License](#license)
+* [Demo](#demo)  
+* [Technology](#technology)  
+* [Features](#features)  
+* [Installation](#installation)  
+* [Usage](#usage)  
+* [Contribute](#contribute)  
+* [Tests](#tests)  
+* [Questions](#questions)  
+* [License](#license)
 
 # Demo
 [README Generator](https://drive.google.com/file/d/1Ic8hjYK_pXZW9p-LFVZ_kld4bHrclXOC/view)
